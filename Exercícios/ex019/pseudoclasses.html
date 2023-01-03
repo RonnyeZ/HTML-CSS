@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex004/R icon.ico" type="image/x-icon">
+    <title>Pseudo-Classes</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color:  lightgray;
+            border: 1px solid black; /*ShortHand*/
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        /* 
+            (#) ID
+            (.) CLASS 
+            (:) PSEUDO-CLASS.
+            (::) PSEUDO-ELEMENT
+            (>) CHILDREN
+        */
+
+        div:hover { 
+        /*a tag HOVER dá o efeito ao passar o mouse por cima do conteúdo*/
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<!--
+    Pseudo-Classe são palavras que definem estados de elementos dentro da HTML.
+
+    Pseudo-Elemento podem agir nas Classes, nos Elementos, nos IDs, etc. Eles mexem direto no Conteúdo periferico do elemento, no que será mostrado.
+-->
+<body>
+    <div id="d1">
+        01
+    </div>
+    <div id="d2">
+        02
+    </div>
+    <div id="d3">
+        03
+    </div>
+</body>
+</html>

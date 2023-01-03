@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="C:\Users\ronye\OneDrive\Documentos\Aulas de programação\Estudos\HTML-CSS\Exercícios\ex004\R icon.ico" type="image/x-icon">
+    <title>Listas</title>
+</head>
+ <!--
+        Anotações
+    1:Tipos de lista não ordenada: disc(padrão), circle e square.
+
+    2:Se você segurar Alt, você é capaz de selecionar varios locais no texto.
+
+    3:
+ -->
+<body>
+    <H1>Trabalhando com Listas</H1>
+    <h2>Lista Ordenadas</h2>
+    <p>Podemos criar Listas Ordenadas através da tag OL (Ordered List), acompanhado de LI para cada elemento da lista.
+    </p>
+    <ol>
+        <li>Acordar;</li>
+        <li>Tomar Café;</li>
+        <li>Escovar od dentes;</li>
+    </ol>
+    <p>Podemos usar Type= e Start= (CSS) para alterar o tipo da lista e por qual valor irá começar.
+    </p>
+    <ol type="A" start="4">
+        <li type="I">Almoçar;</li>
+        <li>Exercitar-se;</li>
+        <li type="a">Estudar;</li>
+    </ol>
+    <h2>Listas Não Ordenadas</h2>
+    <p>Para criar uma lista não ordenada usamos a tag UL (Unordered List), acompanhado também do LI para cada elemento da lista.</p>
+    <ul>
+        <li Type="disc">Vinland Saga;</li>
+        <li Type="square">Jujutsu Kaisen;</li>
+        <li Type="circle">Kimetsu no Yaiba;</li>
+    </ul>
+    <h2>Juntando Listas</h2>
+    <p>Somos capazes de misturar as listas.
+    </p>
+    <ol>
+        <li>Ação</li>
+        <ul Type="circle">
+            <li>Dragon Ball</li>
+            <li>Naruto</li>
+            <li>One Punch Man</li>
+        </ul>
+        <li>Aventura</li>
+        <ul Type="disc">
+            <li>Hunter x Hunter</li>
+            <li>Mushoku Tensei</li>
+            <li>Log Horizon</li>
+        </ul>
+        <li>Suspence</li>
+        <ul Type="square">
+            <li>Attack on Titan</li>
+            <li>Death Note</li>
+            <li>Tokyo Ghoul</li>
+        </ul>
+    </ol>
+    <h2>Lista de Definições</h2>
+    <p>
+        Lista de Definação (dl) se assemelha a um diciónario em seu aspecto, você adiciona um Termo (dt) e em seguida a sua Definição (dd)
+    </p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteudo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+</body>
+</html>

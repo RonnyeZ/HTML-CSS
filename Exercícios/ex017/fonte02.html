@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex004/R icon.ico" type="image/x-icon">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: "Old London";
+            src: url('Olondon_.otf') format('opentype'), url('OldLondon.ttf') format('truetype'), url('Olondona.otf') format('opentype'), url('OldLondonAlternate.ttf') format('truetype');
+
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+                Tipos de Format()
+                    - Opentype (otf)
+                    - Truetype (ttf)
+                    - embedded-opentype
+                    - truetype-aat (Appel Advenced Typography)
+                    - svg
+            */
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*Site Dafont: https://www.dafont.com/pt/ */
+
+        h1 {
+            font-family: 'old london', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+        h2 {
+            font-family: 'old london', Times, serif;
+            font-size: 2em;
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título (TÍTULO)</h1>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis ab accusantium. Beatae enim ab rerum earum atque sed dolorum vel tempore totam minima. Quo earum dolor iste beatae sit!
+    </p>
+    <h2>Subtitulo (SUBTÍTULO)</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, porro! Aut quia quaerat ut eum illo, hic iusto non! Nesciunt recusandae quidem, necessitatibus deserunt sint doloribus porro quasi dicta natus.
+    </p>
+</body>
+</html>

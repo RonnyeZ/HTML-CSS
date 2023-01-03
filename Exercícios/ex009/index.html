@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="C:\Users\ronye\OneDrive\Documentos\Aulas de programação\Estudos\HTML-CSS\Exercícios\ex004\R icon.ico" type="image/x-icon">
+    <title>Trabalhando com Links</title>
+</head>
+<!--
+        Anotações
+    1:Target= é utilizado para saber se o site abrirá um sobre o outro ou em outra pagina
+
+    2:Rel= é utilizado para expecificar a relação com o Target/alvo:
+        - Um site interno como uma proxima pagina Rel=Next/Prev; 
+        - Um site externo Rel=External; 
+        - Um site não associado ao seu Rel=nofollow.
+    3:Você pode usar ../ para voltar uma pagina do seu diretorio
+
+    4:Para disponibilizar um link para download, você precisa usar o Typr=Application/tipo do arquivo, e pra isso existe uma site que disponibiliza as aplicações
+    link: https://www.iana.org/assignments/media-types/media-types.xhtml
+
+-->
+<body>
+    <h1>Usando links</h1>
+    <h2>Link Externo</h2>
+    <p>
+        Para acessar links externos de outros site, utilizamos a tag <abbr title="CSS">&lt;A href="âncora"&gt;</abbr>. <br> Além disso usando <abbr title="CSS">Target="_blank" Rel="external"&gt;</abbr> podemos fazer com que o site abra em uma nova guia.
+    </p>
+    <p>
+        Acesso ao repositório público no Github do <a href="https://gustavoguanabara.github.io/"><abbr title="Sem o Target-">Gustavo Guanabara</abbr></a>!
+    <br>
+        Acesso ao canal no Youtube do <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank" rel="external"><abbr title="Com Target=">Gustavo Guanabara</abbr></a>!
+        <p>
+            Site das aplicações para o Download.<br>
+            <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">Clique Aqui!</a>
+        </p>
+    </p>
+    <h2>Links Interno</h2>
+    <p>
+        Está é a primeira pagina do site. se você quiser, pode acessar também a minha segunda pagina. 
+        <br>
+        <a href="pag002.html" rel="next">Pagina 02</a>
+    </p>
+</body>
+</html>

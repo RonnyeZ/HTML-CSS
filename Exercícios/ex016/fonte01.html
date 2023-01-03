@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex004/R icon.ico" type="image/x-icon">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: "Work sans", Arial, Helvetica, sans-serif;
+
+            font-size: 16px; /* Padrão 16PX=1EM */
+            /*
+            Medidas Absolutas
+            centimetro (cm), milimetro (mm), polegada (in), *pixel (px)*, ponto (pt), paica (pc).
+
+            Medidas Relativas
+            *(em) Altura das letras Maiúsculas*;
+            (ex) Altura X. Referente as minúsculas;
+            (rem) Tipo o EM, pórem relativo à fonte configurada no Body;
+            (vw) View Width é largura da View Port/Tamanho da Tela;
+            (vh) Altura da View Port;
+            (%) porcentagem da medida.
+
+            Recomendadas
+            Pixels (PX) e Altura Maiúscula (EM)
+            */
+
+            font-weight: normal; /*Negrito*/
+            /*
+                    Tipos de Pesos:
+                lighter, normal, bold, bolder; 100 à 900
+            */
+
+            /* ATENÇÃO PARA NÃO CONFUNDIR
+                weight é peso
+                width é largura
+                height é altura
+            */
+
+            font-style: normal, italic; /*Estilo Italico*/
+            text-decoration: normal, underline; /*Sublinhado*/
+        }
+
+        h1 {
+            /* Shorthand/mãozinha é um atalho para colocar todos esses comando em uma unica linha.
+
+            Ordem da Tag -> font-style -> font-weight -> fonte-size -> fonte-family.
+            
+            font-family: 'work sans', 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+
+            font: italic bolder 3em 'work sans', sans-serif;
+            /*Abreviação! ShortHand*/
+        }
+
+        h2 {
+            font: bold 2em 'work sans';
+        }
+    </style>
+
+</head>
+
+<!--
+    As Fontes que obrigatoriamente devem ter acompanhado outras fontes em seu site são as de categoria:
+        Sans-Serif, Serif, Monospace, Script e Display.
+
+    Todo conjunto de fonte deve acompanhar uma categoria padrão no final, para em caso de aparelhos a qual não possuam a fonte primaria do site.
+-->
+
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem veniam ea nam excepturi dolore quasi minima voluptas fuga assumenda aut est laborum ullam aspernatur iusto, eius quam quae animi natus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas unde, sit porro quidem necessitatibus autem ipsam alias incidunt deleniti. Perspiciatis delectus accusamus placeat consectetur odio, earum sequi iusto officia in.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sit praesentium odio amet itaque eius, et atque accusantium possimus obcaecati architecto reiciendis officia! Sit molestias amet necessitatibus eum. Tenetur, provident.
+    </p>
+    <h2>Subtitulo do exercicio</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque commodi voluptate labore distinctio minima reiciendis dolores quibusdam inventore quasi! Amet optio incidunt repudiandae dicta delectus a ipsa rem officiis eum!
+    </p>
+    
+</body>
+</html>
