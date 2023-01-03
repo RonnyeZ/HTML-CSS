@@ -3,6 +3,6 @@
 
 Estou aprendendo a criar sites e agora vou gerenciar meus repositórios
 
-<a href="https://RonnyeZ/HTML-CSS/Exercícios/ex015/cor3">Exercicio 15</a>
+<a href="https://RonnyeZ/HTML-CSS/Exercícios/ex015/cor03">Exercicio 15</a>
 
 isso é um teste
