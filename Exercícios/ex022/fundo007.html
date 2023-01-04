@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex004/R icon.ico" type="image/x-icon">
+    <title>Centralização Vertical</title>
+    <style>
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        /*
+        Position. é mexer no posicionamento da Caixa selecionada.
+
+            relative. normalmente a Caixa ja possui um porsicionamento relativo, a qual seu posicionamento é relativo as confuguraçoes adicionadas a Caixa 
+
+            absolute. O posicionamento da Caixa é absoluto, nao mudará de posição colocada
+
+            info. Você pode utilizar as propriedades como Left, top, bottom, right diretamente na sua Caixa selecionada, porem vale ressaltar que se usa de paramentro a Ponta Superior Esquerda como referencia para o posicionamento
+
+        Transform. é mexer em qualquer Caixa aplicando alguma alteração de transformação nela, como mexer na Pespectiva, Escala de Tamanho, Rotacionar a Caixa, etc.
+
+            translate. ira altera o poxicionamento X e Y da Caixa selecipnada.
+
+            info. o Transform é geralmente utilizado como um segundo plano para adaptar funções ja utilizadas na Caixa. 
+                Exemplo: Ja esta utilizando o Position, porem quer dar mais uma alterada no posicionamento da caixa selecionada sem alterar o primeiro valor; ou entao mudar o ponto de referencia do posicionamento da Caixa selecionada
+
+
+        */
+
+        #conteudo {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <Section id="container">
+        <article id="conteudo">
+
+        </article>
+    </Section>
+</body>
+</html>
