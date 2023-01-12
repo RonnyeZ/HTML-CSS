@@ -21,16 +21,23 @@
             padding: 10px;
         }
 
-        thead, tfoot {
-            background-color: rgb(63, 58, 58);
-            color: white;
-        }
-
         caption {
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
             background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: rgb(63, 58, 58);
+            color: white;
+        }
+
+        tbody tr:nth-child(even) { /*2n, 3n, ...> Valor à cada linha que será listrada; ODD (ou 2n-1)> Impar; EVEN > Par*/
+            background-color: lightgray;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: white;
         }
 
         td.num {
