@@ -16,12 +16,15 @@
 
 <!--
     Tamanho Padrão do Iframe é de 300x150px
+    Editar o iframe pelo CSS sobrepõem a edição feitao pelo HTML
 
-    SCOOLING > Define o scroll de rolagem do site
-        AUTO > Automaticamente é medido se o site precisará de um scroll ou nao
-        YES > Adiciona a rolagem do scroll independentemente
-        NO > Remove a rolagem do scroll independentemente
+    SCOOLING > Define a barra de rolagem (Scroll) do site
+        AUTO > Automaticamente é medido se o site precisará de uma barra de rolagem (Scroll) ou nao
+        YES > Adiciona a barra de rolagem (Scroll) independentemente se precisar
+        NO > Remove a barra de rolagem (Scroll) independentemente se precisar
     INFO: O scooling atualmente nao funciona nos navegadores do windows, porem, nos navegadores linux do mac o scooling funciona normalmente. (OBS: Ao adicionar o scooling, ele vai funcionar so nos macs)
+
+    FRAMEBORDER > Adiciona uma borda com profundidade
 -->
 
 <body>
@@ -33,8 +36,8 @@
         Acessando o site do 
         
 
-        <iframe src="https://cursoemvideo.com" frameborder="0" height="500px" width="500px" scolling="no">
-
+        <iframe src="ttps://cursoemvideo.com" frameborder="1" height="500px" width="500px" scolling="no">
+            Error
         </iframe>
 
 
@@ -43,9 +46,9 @@
     <p>
         O site do 
         
-        <iframe src="" frameborder="1" height="500px" width="500px">
+        <iframe src="https://" frameborder="1" height="500px" width="500px">
             
-            Um Erro ocorreu, acesse o <a href="https://cursoemvideo.com">Curso em video</a>
+            Um Erro ocorreu, acesse o <a href="https://cursoemvideo.com" target="_blank">cursoemvideo></a>
         
         </iframe> 
         é muito legal
