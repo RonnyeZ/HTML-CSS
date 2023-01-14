@@ -6,7 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../ex004/R icon.ico" type="image/x-icon">
     <title>Estudos de Iframe</title>
+    <style>
+        iframe {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
 </head>
+
+<!--
+    Tamanho Padrão do Iframe é de 300x150px
+
+    SCOOLING > Define o scroll de rolagem do site
+        AUTO > Automaticamente é medido se o site precisará de um scroll ou nao
+        YES > Adiciona a rolagem do scroll independentemente
+        NO > Remove a rolagem do scroll independentemente
+    INFO: O scooling atualmente nao funciona nos navegadores do windows, porem, nos navegadores linux do mac o scooling funciona normalmente. (OBS: Ao adicionar o scooling, ele vai funcionar so nos macs)
+-->
+
 <body>
     <h1>Testando o uso de um iframe</h1>
     <p>
@@ -15,14 +32,32 @@
     <p>
         Acessando o site do 
         
-        <iframe src="https://cursoemvideo.com" frameborder="0">
+
+        <iframe src="https://cursoemvideo.com" frameborder="0" height="500px" width="500px" scolling="no">
 
         </iframe>
+
 
         para aprender a programar
     </p>
     <p>
-        O site do <iframe src="https://www.google.com" frameborder="0"></iframe> é muito legal
+        O site do 
+        
+        <iframe src="" frameborder="1" height="500px" width="500px">
+            
+            Um Erro ocorreu, acesse o <a href="https://cursoemvideo.com">Curso em video</a>
+        
+        </iframe> 
+        é muito legal
+    </p>
+    <p>
+        O repositorio do Guanabara
+        
+        <!--
+            <iframe src="https://gustavoguanabara.github.io" frameborder="0"></iframe>
+        -->
+
+        também é bem legal!
     </p>
 </body>
 </html>
