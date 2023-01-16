@@ -25,10 +25,18 @@
 
     Label > Utiliza-se para linkar (Criar uma ligação) entre um texto/conteudo com algum Input, ou com outra coisa. (USE SEMPRE, TAG OBRIGATORIA PARA INPUTS)
         for > Linka com um ID
+
+    Exitem dois metodos simples pra envio de formulario. 
+        GET (O Padrão)> Onde as informações do formulario aparecem na URL, alem de ficarem visiveis dentro do cabeçalho do sistema do site(Dentro da opção Inspeção);
+            - Metodo GET so pode gerar formularios ate o maximo de 3Kb (3000 bytes)
+            - Metodo GET não recomendado para conteudos sensiveis, como senhas, numeros de cartão, envios de fotos, ja que possui uma menor segurança. RECOMENDADO USAR FORMULARIOS HTTPS
+
+        POST > As informações do formulario não aparecem na URL, porem continuam visiveis dentro do cabeçalho do sistema do site(Dentro da opção Inspeção);
+            - Metodo POST é um pouco melhor ao enviar formularios não perceptiveis, por não aparecer em sua URL, porem ainda assim não é recomendado para conteudos sensiveis como senhas. RECOMENDADO USAR FORMULARIOS HTTPS
 -->
 <body>
     <h1>Meu primeiro formulário!</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p>
             <label for="inome">Nome:</label> 
             <input type="text" name="nome" id="inome">
