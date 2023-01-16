@@ -18,14 +18,25 @@
     O Input naturalmente não esta conectado com o conteúdo do lado de fora. Ex: O "Nome" não possui ligação com o "Input".
 
     autocomplete > Liga ou desliga a função de listar e autocompletar algo, como uma lista
+
+    Input > Adiciona um formulario para, escrever, enviar, etc.
+        name > é melhor para ser usado em PHP
+        id > é melhor para ser usado em JavaScript
+
+    Label > Utiliza-se para linkar (Criar uma ligação) entre um texto/conteudo com algum Input, ou com outra coisa. (USE SEMPRE, TAG OBRIGATORIA PARA INPUTS)
+        for > Linka com um ID
 -->
 <body>
     <h1>Meu primeiro formulário!</h1>
-    <form action="" autocomplete="off">
-        <p>Nome: 
-            <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: 
-            <input type="text" name="sobrenome" id="sobrenome"></p>
+    <form action="cadastro.php" autocomplete="off">
+        <p>
+            <label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
         <p><input type="submit" value="Enviar"></p>
     </form>
 </body>
