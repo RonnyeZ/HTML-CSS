@@ -2,6 +2,14 @@
 
 /* Todas as demais midias */
 
+/*
+Pequenas telas: até 600px
+celular: 600px ate 768px
+tablet: 768px ate 922px
+pc: 922px ate 1200px
+grande: 1200px pra cima
+*/
+
 @media print {
 
 }
